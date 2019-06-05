@@ -2,3 +2,4 @@ ssr.html
 *.pem
 *.bak
 *.bak1
+haproxy.cfg
