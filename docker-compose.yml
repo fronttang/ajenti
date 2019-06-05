@@ -5,6 +5,8 @@ services:
     image: algonrey/prp
     container_name: ajenti
     network_mode: host
+    stdin_open: true
+    tty: true
     volumes:
       - ./nginx/:/etc/nginx/
       - ./ajenti/:/etc/ajenti/
