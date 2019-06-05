@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  ajenti:
+    restart: always
+    image: algonrey/prp
+    container_name: ajenti
+    network: host
+    volumes:
+      - ./nginx/:/etc/nginx/
+      - ./ajenti/:/etc/ajenti/
+      - /home/docker/blog/public/:/etc/blog/
+      - ./www/:/etc/www/
