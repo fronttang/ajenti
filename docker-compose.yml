@@ -2,7 +2,10 @@ version: "3.1"
 services:
   ajenti:
     restart: always
-    image: algonrey/prp
+    build:
+      context: "."
+      dockerfile: ./Dockerfile
+    image: ajenti
     container_name: ajenti
     network_mode: host
     stdin_open: true
