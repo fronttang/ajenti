@@ -12,7 +12,7 @@ function killProsess() {
 
 function start() {
 	echo "start haproxy..."
-	/home/docker/haproxy/sbin/haproxy -f /home/docker/haproxy/conf/haproxy.cfg
+	/bin/bash -c "/home/docker/haproxy/sbin/haproxy -f /home/docker/haproxy/conf/haproxy.cfg"
 }
 
 function stop() {
