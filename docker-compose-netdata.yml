@@ -3,7 +3,7 @@ services:
   netdata:
     image: netdata/netdata
     hostname: centos
-    container_name: haproxy
+    container_name: netdata
     network_mode: bridge
     ports:
       - 19999:19999
