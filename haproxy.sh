@@ -7,7 +7,7 @@ function killProsess() {
 	echo $NAME
 	PID=$(ps -e | grep $NAME | awk '{print $1}')
 	echo "PID: $PID"
-	kill -9 $PID
+	eval $(kill -9 $PID)
 }
 
 function start() {
@@ -23,6 +23,7 @@ function stop() {
 function restart() {
 	echo "restart haproxy..."
 	stop
+  sleep 3;
 	start
 }
 
@@ -37,5 +38,7 @@ case "$1" in
 		restart
 		;;
 	* )
+    echo "usage: $0 {start|stop|restart}"
+    exit 1
 		;;
 esac
