@@ -14,4 +14,5 @@ services:
     volumes:
       - ./netdata/proc:/host/proc:ro
       - ./netdata/sys:/host/sys:ro
+      - ./netdata/conf/netdata.conf:/etc/netdata/netdata.conf
       - /var/run/docker.sock:/var/run/docker.sock:ro
