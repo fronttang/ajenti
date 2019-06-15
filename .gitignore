@@ -4,3 +4,4 @@ ssr.html
 *.bak1
 haproxy.cfg
 docker-socks5.yml
+docker-softether.yml
