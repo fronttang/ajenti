@@ -11,4 +11,4 @@ services:
     ports:
       - 9000:9000
 volumes:
-  - portainer_data
+  portainer_data: 
