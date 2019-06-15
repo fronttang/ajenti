@@ -9,4 +9,4 @@ services:
       - 8118:8118
       - 1188:1188
     volumes:
-      - ./conf:/usr/local/etc/haproxy:ro
+      - ./haproxy/conf:/usr/local/etc/haproxy:ro

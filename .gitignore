@@ -3,3 +3,4 @@ ssr.html
 *.bak
 *.bak1
 haproxy.cfg
+docker-socks5.yml

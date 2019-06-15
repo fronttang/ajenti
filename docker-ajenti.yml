@@ -13,5 +13,5 @@ services:
     volumes:
       - ./nginx/:/etc/nginx/
       - ./ajenti/:/etc/ajenti/
-      - /home/docker/blog/public/:/etc/blog/
+      - /home/blog/public/:/etc/blog/
       - ./www/:/etc/www/
