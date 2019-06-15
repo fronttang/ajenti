@@ -1,6 +1,7 @@
 version: '3'
 services:
   netdata:
+    restart: always
     image: netdata/netdata
     hostname: centos
     container_name: netdata
