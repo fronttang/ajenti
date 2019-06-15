@@ -6,8 +6,6 @@ services:
     container_name: portainer
     network_mode: bridge
     volumes:
-      portainer_data:
-      driver: local
       - /var/run/docker.sock:/var/run/docker.sock
       - ./portainer/data:/data
     ports:
